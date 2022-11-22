@@ -1,6 +1,14 @@
 import React, { useRef } from 'react'
 import './navbarStyle.scss';
 
+/**
+ * Aria Labels
+ * Error Status Code
+ * 
+ * Testing
+ * 
+ */
+
 const Navbar = () => {
     const tabLoginRef = useRef(undefined)
     const tabCurrentStatus = useRef(true)
@@ -12,7 +20,6 @@ const Navbar = () => {
         else {
             tabLoginRef.current.style.opacity = '0%';
         }
-
         tabCurrentStatus.current = !tabCurrentStatus.current;
     }
 

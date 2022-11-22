@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react'
 
 var LINK_NAME = 'links_url'
 const SearchInputComponent = () => {
-    // localStorage.setItem([]);
     const [data, setData] = useState("")
     const [url, setUrl] = useState("")
     const [loading, setLoading] = useState(false)
@@ -13,7 +12,6 @@ const SearchInputComponent = () => {
         if (url.length > 0) {
             setLoading(true);
             let data = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`).then(data => data.json()).catch((err) => err);
-            // console.log(data);
 
             if (data.result) {
                 if (localStorage.getItem(LINK_NAME) !== null) {
@@ -34,7 +32,7 @@ const SearchInputComponent = () => {
         }
         else {
             document.querySelector('.Form-Container .input-container').style.setProperty('--placeholder-color', 'hsl(0, 87%, 67%)');
-            document.querySelector('.Form-Container .input-container input').style.border = '6px solid red';
+            document.querySelector('.Form-Container .input-container input').style.border = '3px solid red';
             document.querySelector('.Form-Container .input-container p').style.display = 'block';
         }
     }
