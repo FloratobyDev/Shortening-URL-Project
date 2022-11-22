@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+//PRIMARY
+$cyan: hsl(180, 66%, 49%);
+$dark-violet: hsl(257, 27%, 26%);
+
+//SECONDARY
+$red: hsl(0, 87%, 67%);
+
+//TERTIARY
+$gray: hsl(0, 0%, 75%);
+$grayish-violet: hsl(257, 7%, 63%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
+
+.HERO{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 80%;
+    margin-bottom: 5rem;
+   
+    .Person-Sitting{
+        position: relative;
+        right: -200px;
+    }
+
+    .Call-To-Action-Container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 4.5rem;
+        row-gap: 10px;
+        // justify-content: center;
+        // align-items: center;
+
+        .Cta-Quote{
+            font-family: 'Poppins',sans-serif;
+            font-weight: 700;
+            font-size: 4.5rem;
+            line-height: 1.1;
+            width: 120%;
+            color: $very-dark-violet;
+        }
+        .Cta-Desc{
+            font-family: 'Poppins',sans-serif;
+            color: $gray;
+            font-weight: 500;
+            font-size: 1.3rem;
+
+            // width: 70%;
+        }
+        #Cta-Button{
+            // border: 1px solid black;
+            // outline: transparent;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            background-color: $cyan;
+
+            margin-top: 1rem;
+            padding: 18px 30px;
+            width: 40%;
+        }
+
+        
+    }
+
+}
+
+@media (max-width: 475px) {
+    .HERO{
+        flex-direction: column;
+        text-align: center;
+        // align-items: center;
+        // justify-content: center;
+        // height: 100%;
+        .Person-Sitting{
+            width: 450px;
+            right: 10px;
+            // position: relative;
+        }
+
+        .Call-To-Action-Container{
+            align-items: center;
+            .Cta-Quote{
+                font-size: 2rem;
+            }
+
+            #Cta-Button{
+                font-size: 1rem;
+                width: 60%;
+            }
+
+        }
+
+
+    }
+}

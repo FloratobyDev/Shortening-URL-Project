@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+//PROBLEMS ENCOUNTER: 
+// Image overlflowing causes the viewport to resize, which is terrible.
+//  -Fixed it with overflow hidden and setting body position to relative.
+
+$cyan: hsl(180, 66%, 49%);
+$dark-violet: hsl(257, 27%, 26%);
+
+$red: hsl(0, 87%, 67%);
+
+$gray: hsl(0, 0%, 75%);
+$grayish-violet: hsl(257, 7%, 63%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
+
+
+
+.FOOTER{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    .Boost-Container{
+        background: url('../../../public/images/bg-boost-desktop.svg');
+        background-repeat:round;
+        background-color: $dark-violet;
+        text-align: center;
+        width: 100%;
+        // background: grey;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0px;
+        
+        font-family: 'Poppins',sans-serif;
+        
+        gap: 2rem;
+
+        // text-align: center;
+
+        .Boost-Quote{
+            
+            font-size: 2rem;
+            font-weight: 700;
+            color:white;
+        }
+
+        #Get-Started{
+            width: 15%;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            background-color: $cyan;
+            padding: 18px 30px;
+        }
+    }
+
+    .Footer-Container{
+        background: $very-dark-violet;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // align-items: center;
+        // font-family: 'Poppins',sans-serif;
+        color:white;
+        .Brand-Name{
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-align: center;
+            flex: 0;
+            padding-left: 9.5rem;
+        }
+
+        .Other-Info{
+            flex: 3.2;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .Feature-Container{
+                display: flex;
+                flex-direction: column;
+                padding: 0px 3rem;
+            
+                .Title{
+                    padding-bottom: .6rem;
+                    font-weight: 700;
+                }
+
+                ul{
+                    // display: flex;
+                    // flex-direction: column;
+                    // gap: 10px;
+                }
+                
+                ul li{
+                    padding: 5px 0;
+                    font-size: 1rem;
+                    font-weight:lighter;
+                    text-decoration: none;
+                    list-style: none;
+                }
+
+                ul li:hover{
+                    cursor: pointer;
+                    color: $cyan;
+                }
+            }
+
+            .Social-Icon-Container{
+                padding: 0 1rem;
+                display: flex;
+                flex-direction: row;
+                gap: 1.5rem;
+                svg{
+                    transform: scale(1.2);
+                }
+
+                svg:hover path{
+                    cursor: pointer;
+                    fill:$cyan;
+                }
+            }
+        }
+
+        padding: 5rem 0px;
+    }
+
+    @media (max-width: 475px) {
+        
+        .Boost-Container{
+            background-attachment: local;
+            background-repeat:space;
+            background-size: 1750px;
+            .Boost-Quote{
+                font-size: 1.6rem;
+            }
+            #Get-Started{
+                width: 60%;
+                font-size: 1.2rem;
+            }
+        }
+    
+        .Footer-Container{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+            .Brand-Name{
+                padding-left: 0;
+                // padding-bottom: 1rem;
+            }
+    
+            .Other-Info{
+                flex-direction: column;
+                gap: 2.5rem;
+    
+                .Social-Icon-Container{
+                    gap: 1.1rem;
+                }
+            }
+        }
+    }
+
+}
+
