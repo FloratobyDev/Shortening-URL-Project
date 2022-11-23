@@ -33,83 +33,61 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![./screenshot.PNG](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [SOLUTION](https://github.com/FloratobyDev/Shortening-URL-Project)
+- Live Site URL: [LIVE SITE](https://amazing-hotteok-7a98a7.netlify.app/)
 
 ## My process
+
+**THE API PROCESS**
+ - Read Shrtcode API. 
+ - Practiced calling the API with a given parameter.
+ - Analyzed the JSON results and remember fields that are necessary for the project.
+ - Implemented API into the code with the built in fetch API.
+
+**THE HTML PROCESS**
+ - Looked at the design to help understand the structure of the page.
+ - Prototyped a structure, then modified to be accessible and responsive.
+ - Partially added a custom CSS methodology. We'll be using SUIT next project.
+
+**THE JS PROCESS**
+ - Behavior implemented before styling. 
+ - First implemented the behavior which accepts a url from the input and sends in a GET Method to the [Shrtcode.de](https://shrtco.de/) server. The server then responds with a JSON object. The object is pushed in a localStorage where the rest of the previous links are stored. 
+ - Next, the data from localStorage is retrieved and used as an argument for a component that displays the data into the page.     
+ - Error behavior is also created when a user tries to send an empty request.
+ - 
+**THE CSS PROCESS**
+ - Styled components from header to footer.
+ - For each component, wrote down the structure first using SASS' nested classes.
+ - Worked on alignment first, then added the custom size, color, font style, and more.
+ - Worked on the page's `RESPONSIVENESS` -- mobile and desktop only.
+ - Polished for better overview.
+
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- Custom CSS Methodology
+- [SASS](https://sass-lang.com/) - SASS Precompiler
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
+ - How to use background-repeat space and round.
+ - How to use overflow: hidden to disable vertical scrolling.
+ - How to use text overflow and ellipsis. 
+ - How to use Shrtcode.de's API.
+ - How to use CSS custom props.
+ - How to use row-reverse.
+ - How to use a CSS Methodology. 
+ - How to use SASS' at-rule[import].
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Michael Mushrush](https://michaelmushrush.tech/)
